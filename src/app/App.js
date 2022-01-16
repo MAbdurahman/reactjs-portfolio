@@ -1,11 +1,13 @@
 import React from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import './../stylesheets/home.css';
 import Home from './../pages/Home';
 import Contact from './../pages/Contact';
 import Courses from './../pages/Courses';
 import Projects from './../pages/Projects';
 import About from './../pages/About';
 import Error from './../pages/Error';
+
 
 export default function App() {
 	return (

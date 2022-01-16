@@ -17,17 +17,39 @@
 	cursor: default;
 	text-shadow: 0px 0px 10px #fff;
 }
+div#header-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1#header-heading--one,
+h1#header-heading--two {
+	font-size: 3.5rem;
+	letter-spacing: 3px;
+}
+
+div#header-heading--sub h2 {
+	margin-bottom: 1em;
+	font-size: 2.75rem;
+	font-weight: 200;
+	letter-spacing: 3px;
+	color: rgba(245, 245, 245, 0.8);
+}
+div#header-heading--btn {
+}
 .primary-button {
 	background-color: white;
 	height: 45px;
 	border-radius: 25px;
 	border: none;
-	width: 50%;
+	width: 33.3%;
 }
 
 .primary-button a {
 	text-decoration: none;
 	color: black;
+	font-size: 1.1rem;
+	letter-spacing: 2px;
 }
 
 .devstack {
@@ -53,6 +75,22 @@
 pre {
 	font-size: 18px;
 	font-family: 'Montserrat', sans-serif !important;
+}
+@media only screen and (max-width: 1540px) {
+	h1#header-heading--one,
+	h1#header-heading--two {
+		font-size: 3rem;
+		letter-spacing: 3px;
+	}
+
+	div#header-heading--sub h2 {
+		font-size: 2rem;
+	}
+	.primary-button a{
+		width: 40%;
+		font-size: 1rem;
+	
+	}
 }
 
 @media (max-width: 750px) {
