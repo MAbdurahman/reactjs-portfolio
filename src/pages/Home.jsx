@@ -17,7 +17,7 @@ export default function Home() {
 							<h2>Developer and Instructor</h2>
 						</div>
 						<div id='header-heading--btn'>
-							<button className='primary-button font-bold'>
+							<button className='primary-button'>
 								<a href='#'>View More</a>
 							</button>
 						</div>
