@@ -30,6 +30,7 @@ div#header-heading--sub h2 {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 2.75rem;
 	font-weight: 200;
+	text-transform: none;
 	letter-spacing: 3px;
 	color: rgba(245, 245, 245, 0.8);
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Home() {
    return (
-		<div>
+		<>
 			<div
 				className='introduction flex-with-center'
 				style={{ backgroundImage: `url(./assets/introbg.svg)` }}
@@ -24,6 +24,6 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }
