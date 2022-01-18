@@ -1,8 +1,10 @@
 import React from 'react';
+import Header from '../components/Header';
 
 export default function Home() {
    return (
 		<>
+		<Header />
 			<div
 				className='introduction flex-with-center'
 				style={{ backgroundImage: `url(./assets/introbg.svg)` }}
