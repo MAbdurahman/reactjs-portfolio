@@ -1,9 +1,13 @@
 import React from 'react';
+import Header from '../components/Header';
 
 export default function Error() {
-   return (
-      <div>
-         <h2>error page</h2>
-      </div>
-   )
+	return (
+		<>
+			<Header />
+			<div>
+				<h2>error page</h2>
+			</div>
+		</>
+	);
 }

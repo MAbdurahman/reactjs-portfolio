@@ -1,66 +1,89 @@
 .menu-icon {
+	z-index: 3;
+	margin: 20px;
 	color: orangered;
 	color: #A7233A;
 	font-size: 70px;
 	font-size: 4.375rem;
-	margin: 20px;
-	z-index: 3;
 	cursor: pointer;
+	transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+					font-size 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu-icon:hover {
+	color: #A7233A;
+	color: rgb(255, 255, 255);
+	color: rgb(212, 61, 86);
+	font-size: 4.5rem;
 }
 
 .show-header {
-	color: white;
-	text-decoration: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	position: fixed;
-	top: 0;
-	right: 0;
+	text-decoration: none;
+	color: white;
+	color: #A7233A;
 	background-color: #001220;
+	/* border-bottom-left-radius: 33%; */
 	opacity: 0.95;
-	height: 65vh;
-	width: 50%;
-	border-bottom-left-radius: 50%;
-	transition: all 0.5s;
+	transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 	overflow: hidden;
-	z-index: 2;
 }
 
 .hide-header {
+	position: fixed;
+	top: 0;
+	right: -30px;
+	height: 100vh;
+	width: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: white;
 	text-decoration: none;
+	color: white;
 	overflow: hidden;
-	position: fixed;
-	top: 0;
-	right: 0;
-	height: 0;
-	width: 0;
-	transition: all 0.5s;
+	transition: all 0.5s ease-in-out;
 }
 ul li {
-	color: white;
+	/* color: white; */
 	list-style: none;
 	margin-top: 25px;
+	margin-top: 1.5625em;
 }
+
 ul a {
+	font-size: 1.667rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 	color: white;
+	color: rgba(167, 35, 57, 0.9);
 	text-decoration: none;
+	transition: color 0.5s ease-in-out;
+}
+
+ul a:hover {
+	color: rgb(253, 74, 104);
 }
 
 .active {
 	border: 3px solid cyan;
-	padding: 5px;
-	border-radius: 10px;
+	border: 2px solid rgba(167, 35, 58, 1);
+	padding: 5px 13px;
+	border-radius: 5px;
 }
 .active a {
 	font-weight: bold;
 	color: cyan;
+	color: rgba(167, 35, 58, 1);
 }
 
 .contact {
@@ -145,6 +168,7 @@ textarea {
 	}
 	.menu-icon {
 		color: orangered;
+		color: #A7233A;
 		font-size: 45px;
 	}
 	.contact {
