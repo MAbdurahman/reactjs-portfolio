@@ -1,4 +1,7 @@
 .introduction {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 100vh;
 	width: 100%;
 	background-position: 100% 100%;
@@ -28,6 +31,15 @@ div#header-heading--sub h2 {
 	text-transform: none;
 	letter-spacing: 3px;
 	color: rgba(245, 245, 245, 0.8);
+}
+
+div#header-heading--btn {
+	display: flex;
+	justify-content: center;
+}
+
+button.btn-home a {
+	color: var(--clr-white);
 }
 
 
