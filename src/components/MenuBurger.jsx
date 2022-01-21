@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import RightSideMenu from './RightSideMenu';
 
 const StyledBurger = styled.div`
 	position: fixed;
@@ -25,7 +26,6 @@ const StyledBurger = styled.div`
 		background-color: ${({ open }) => open ? 'rgba(189, 186, 186, 0.466)' : '#bdbaba'};
 		border-radius: 10px;
 		transform-origin: 1px;
-
 		transition: all 0.3s linear;
 
 		&:nth-child(1) {
@@ -53,6 +53,7 @@ export default function MenuBurger() {
 				<div />
 				<div />
 			</StyledBurger>
+         <RightSideMenu open={open} />
 		</>
 	);
 }
