@@ -7,7 +7,7 @@ export default function Preloader() {
 			<img
 				className='preloader-gif'
 				src={Gif}
-				alt='Set of Gears'
+				alt='Technology spinning'
 				id='preloader-gif'
 			/>
 		</div>

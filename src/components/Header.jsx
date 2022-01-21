@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { RiMenu3Fill, RiCloseFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
+import MenuBurger from './MenuBurger';
 
 export default function Header() {
 	//**************** variables ****************//
@@ -9,7 +10,7 @@ export default function Header() {
 
 	return (
 		<div className='header'>
-			{showHeader ? (
+			{/* {showHeader ? (
 				<RiCloseFill
 					className='menu-icon position-fixed top-0 end-0'
 					onClick={() => {
@@ -23,7 +24,8 @@ export default function Header() {
 						setShowHeader(!showHeader);
 					}}
 				/>
-			)}
+			)} */}
+			<MenuBurger />
 
 			<ul className={`${showHeader ? 'show-header' : 'hide-header'}`}>
 				<li className={`${path == '/' && 'active'}`}>
