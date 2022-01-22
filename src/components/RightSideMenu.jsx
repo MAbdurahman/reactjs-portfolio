@@ -130,7 +130,7 @@ export default function RightSideMenu({ open }) {
 				<Link to='/'>Home</Link>
 			</li>
 			<li>
-				<Link to='/'>About Me</Link>
+				<Link to='/about'>About Me</Link>
 			</li>
 			<li>
 				<Link to='/'>Tech Skills</Link>
