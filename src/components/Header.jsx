@@ -27,7 +27,7 @@ export default function Header() {
 			)} */}
 			<MenuBurger />
 
-			<ul className={`${showHeader ? 'show-header' : 'hide-header'}`}>
+			{/* <ul className={`${showHeader ? 'show-header' : 'hide-header'}`}>
 				<li className={`${path == '/' && 'active'}`}>
 					<Link to='/'>Home</Link>
 				</li>
@@ -43,7 +43,7 @@ export default function Header() {
 				<li className={`${path == '/contact' && 'active'}`}>
 					<Link to='/contact'>Contact</Link>
 				</li>
-			</ul>
+			</ul> */}
 		</div>
 	);
 }

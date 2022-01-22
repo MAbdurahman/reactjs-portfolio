@@ -13,7 +13,7 @@ const StyledBurger = styled.div`
 	justify-content: space-around;
 	flex-flow: column nowrap;
    background-color: transparent;
-   transition: transform 0.35s cubic-bezier(0.26, 0.1, 0.27, 1.55);
+   transition: transform 0.333s cubic-bezier(0.26, 0.1, 0.27, 1.55);
 	cursor: pointer;
 
    &:hover {
@@ -23,10 +23,10 @@ const StyledBurger = styled.div`
 	div {
 		width: 3rem;
 		height: 3px;
-		background-color: ${({ open }) => open ? 'rgba(189, 186, 186, 0.466)' : '#bdbaba'};
+		background-color: ${({ open }) => open ? '#bdbaba' : '#bdbaba'};
 		border-radius: 10px;
 		transform-origin: 1px;
-		transition: all 0.3s linear;
+		transition: all 0.333s linear;
 
 		&:nth-child(1) {
 			transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};

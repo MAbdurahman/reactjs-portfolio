@@ -60,6 +60,7 @@ ul li {
 }
 
 ul a {
+	padding-bottom: .5em;
 	font-size: 1.667rem;
 	font-weight: bolder;
 	text-transform: uppercase;
@@ -67,14 +68,16 @@ ul a {
 	color: white;
 	color: rgba(167, 35, 57, 0.9);
 	text-decoration: none;
-	transition: color 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out,
+					border 0.5s ease-in-out;
 }
 
-ul a:hover {
-	color: rgb(253, 74, 104);
-}
+/* ul a:hover {
+	color: blue;
+	border-bottom: 2px solid blue;
+} */
 
-.active {
+/* .active {
 	border: 3px solid cyan;
 	border: 2px solid rgba(167, 35, 58, 1);
 	padding: 5px 13px;
@@ -84,7 +87,7 @@ ul a:hover {
 	font-weight: bold;
 	color: cyan;
 	color: rgba(167, 35, 58, 1);
-}
+} */
 
 .contact {
 	padding-top: 50px;
