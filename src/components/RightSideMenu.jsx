@@ -105,6 +105,7 @@ const Ul = styled.ul`
 		height: 100%;
 		z-index: -1;
 		background: #8da9c4;
+		border-radius: 3px;
 		opacity: 0;
 		--webkit-transform: scale3d(0.7, 1, 1);
 		transform: scale3d(0.7, 1, 1);
