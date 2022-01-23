@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
@@ -84,6 +84,8 @@ const Ul = styled.ul`
 	}
 
 	a {
+		position: relative;
+		font-size: 1.5rem;
 		letter-spacing: 2px;
 		color: #edeef4;
 		background-color: transparent;
@@ -91,40 +93,27 @@ const Ul = styled.ul`
 		--webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 		transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	}
-	a:active,
-	a:focus,
-	a:hover {
-		color: #13315c;
-	}
-	a::before {
+	a:before {
 		content: '';
 		position: absolute;
-		top: 0;
+		bottom: -0.0125em;
 		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
+		right: 0;
+		display: block;
+		height: 3px;
+		background: #13315c;
 		background: #8da9c4;
-		border-radius: 3px;
-		opacity: 0;
-		--webkit-transform: scale3d(0.7, 1, 1);
-		transform: scale3d(0.7, 1, 1);
-		--webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
-		transition: transform 0.4s, opacity 0.4s;
-		--webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-		transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+		transform: scale(0, 1);
+		transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}
-
-	a:active::before,
 	a:hover::before,
-	a:focus::before {
-		opacity: 1;
-		--webkit-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
+	a.active::before {
+		transform: scale(1, 1);
 	}
 `;
 
 export default function RightSideMenu({ open }) {
+
 	return (
 		<Ul open={open} className={`${open ? 'active' : ''}`}>
 			<li>
@@ -134,13 +123,13 @@ export default function RightSideMenu({ open }) {
 				<Link to='/about'>About Me</Link>
 			</li>
 			<li>
-				<Link to='/'>Tech Skills</Link>
+				<Link to='/skills'>Tech Skills</Link>
 			</li>
 			<li>
-				<Link to='/'>Portfolio</Link>
+				<Link to='/portfolio'>Portfolio</Link>
 			</li>
 			<li>
-				<Link to='/'>Contact Me</Link>
+				<Link to='/contact'>Contact Me</Link>
 			</li>
 		</Ul>
 	);
