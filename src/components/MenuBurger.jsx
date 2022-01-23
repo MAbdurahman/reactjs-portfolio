@@ -22,6 +22,7 @@ const StyledBurger = styled.div`
 
 	div {
 		width: 3rem;
+		width: 50px;
 		height: 3px;
 		background-color: ${({ open }) => open ? '#bdbaba' : '#bdbaba'};
 		border-radius: 10px;
