@@ -11,13 +11,14 @@ import Projects from './../pages/Projects';
 import About from './../pages/About';
 import Error from './../pages/Error';
 import Skills from '../pages/Skills';
+import MenuBurger from '../components/MenuBurger';
 
 
 export default function App() {
 	return (
 		<div>
 			<Preloader />
-			<BrowserRouter>
+{/* 			<BrowserRouter>
 			<Switch>
 				<Route path='/' exact component={Home} />
 				<Route path='/about' exact component={About} />
@@ -28,7 +29,13 @@ export default function App() {
 				<Route path='/contact' exact component={Contact} />
 				<Route path='*' component={Error} />
 			</Switch>
-			</BrowserRouter> 
+			</BrowserRouter> */} 
+			<MenuBurger />
+			<Home />
+			<About />
+			<Skills />
+			<Portfolio />
+			<Contact />
 			
 			
 		</div>

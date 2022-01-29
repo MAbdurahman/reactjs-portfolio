@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { useGlobalContext } from '../utils/context';
+import { Link } from 'react-scroll';
 
 const moveFromRight = keyframes`
 	0% {
@@ -114,24 +115,75 @@ const Ul = styled.ul`
 `;
 
 export default function RightSideMenu() {
-	const { isOpen, handleClick, closeMenu } = useGlobalContext(); 
+	const { isOpen, closeMenu } = useGlobalContext(); 
 
 	return (
 		<Ul isOpen={isOpen} className={`${isOpen ? 'active' : ''}`}>
 			<li>
-				<Link onClick={closeMenu} to='/'>Home</Link>
+				<Link
+					activeClass='active'
+					to='home'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={500}
+					onClick={closeMenu}
+		
+				>
+					Home
+				</Link>
 			</li>
 			<li>
-				<Link onClick={closeMenu} to='/about'>About Me</Link>
+				<Link
+					activeClass='active'
+					to='about'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={500}
+					onClick={closeMenu}
+				>
+					About Me
+				</Link>
 			</li>
 			<li>
-				<Link onClick={closeMenu} to='/skills'>Tech Skills</Link>
+				<Link
+					activeClass='active'
+					to='skills'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={500}
+					onClick={closeMenu}
+				>
+					Tech Skills
+				</Link>
 			</li>
 			<li>
-				<Link onClick={closeMenu} to='/portfolio'>Portfolio</Link>
+				<Link
+					activeClass='active'
+					to='portfolio'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={500}
+					onClick={closeMenu}
+				>
+					Portfolio
+				</Link>
 			</li>
 			<li>
-				<Link onClick={closeMenu} to='/contact'>Contact Me</Link>
+				<Link
+					activeClass='active'
+					to='contact'
+					spy={true}
+					smooth={true}
+					offset={0}
+					duration={500}
+					onClick={closeMenu}
+				>
+					Contact Me
+				</Link>
 			</li>
 		</Ul>
 	);
