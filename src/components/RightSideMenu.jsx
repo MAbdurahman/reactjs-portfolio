@@ -83,6 +83,7 @@ const Ul = styled.ul`
 		position: relative;
 		padding: 1em 0.625em;
 		opacity: 0;
+		cursor: pointer;
 	}
 
 	a {
