@@ -119,19 +119,19 @@ export default function RightSideMenu() {
 	return (
 		<Ul isOpen={isOpen} className={`${isOpen ? 'active' : ''}`}>
 			<li>
-				<Link to='/'>Home</Link>
+				<Link onClick={closeMenu} to='/'>Home</Link>
 			</li>
 			<li>
-				<Link to='/about'>About Me</Link>
+				<Link onClick={closeMenu} to='/about'>About Me</Link>
 			</li>
 			<li>
-				<Link to='/skills'>Tech Skills</Link>
+				<Link onClick={closeMenu} to='/skills'>Tech Skills</Link>
 			</li>
 			<li>
-				<Link to='/portfolio'>Portfolio</Link>
+				<Link onClick={closeMenu} to='/portfolio'>Portfolio</Link>
 			</li>
 			<li>
-				<Link to='/contact'>Contact Me</Link>
+				<Link onClick={closeMenu} to='/contact'>Contact Me</Link>
 			</li>
 		</Ul>
 	);

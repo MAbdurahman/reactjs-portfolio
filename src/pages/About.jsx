@@ -5,9 +5,9 @@ export default function About() {
    return (
       <>
       <Header />
-      <div>
+      <section id='about'>
          <h2>about page</h2>
-      </div>
+      </section>
       
       </>
    )

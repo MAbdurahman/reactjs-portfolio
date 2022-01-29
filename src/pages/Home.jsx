@@ -6,7 +6,7 @@ export default function Home() {
    return (
 		<>
 		<Header />
-			<div
+			<div id='home'
 				className='introduction'
 				style={{ backgroundImage: `url(./assets/intro-background.svg)` }}
 			>

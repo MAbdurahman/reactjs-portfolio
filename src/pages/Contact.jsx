@@ -5,9 +5,9 @@ export default function Contact() {
 	return (
 		<>
 			<Header />
-			<div>
+			<section id='contact'>
 				<h2>contact page</h2>
-			</div>
+			</section>
 		</>
 	);
 }

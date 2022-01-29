@@ -28,7 +28,9 @@ export default function App() {
 				<Route path='/contact' exact component={Contact} />
 				<Route path='*' component={Error} />
 			</Switch>
-			</BrowserRouter>
+			</BrowserRouter> 
+			
+			
 		</div>
 	);
 }

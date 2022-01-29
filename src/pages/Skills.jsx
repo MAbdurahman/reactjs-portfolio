@@ -5,9 +5,9 @@ export default function Skills() {
    return (
 		<>
 			<Header />
-			<div>
+			<section id='skills'>
 				<h2>Tech Skills Page</h2>
-			</div>
+			</section>
 		</>
 	);
 }
