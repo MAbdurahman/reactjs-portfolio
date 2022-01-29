@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import RightSideMenu from './RightSideMenu';
+import { useGlobalContext } from '../utils/context';
 
 const StyledBurger = styled.div`
 	position: fixed;
@@ -24,37 +25,38 @@ const StyledBurger = styled.div`
 		width: 3rem;
 		width: 50px;
 		height: 3px;
-		background-color: ${({ open }) => open ? '#bdbaba' : '#bdbaba'};
+		background-color: ${({ isOpen }) => isOpen ? '#bdbaba' : '#bdbaba'};
 		border-radius: 10px;
 		transform-origin: 1px;
 		transition: all 0.333s linear;
 
 		&:nth-child(1) {
-			transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
+			transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
 		}
 
 		&:nth-last-child(2) {
-			transform: ${({ open }) =>
-				open ? 'translateX(300%)' : 'translateX(0)'};
+			transform: ${({ isOpen }) =>
+				isOpen ? 'translateX(300%)' : 'translateX(0)'};
 		}
 
 		&:nth-child(3) {
-			transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
+			transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
 		}
 	}
 `;
 
 export default function MenuBurger() {
 	//**************** variables ****************//
-	const [open, setOpen] = useState(false);
+	const { isOpen, handleClick } = useGlobalContext();
+
 	return (
 		<>
-			<StyledBurger open={open} onClick={() => setOpen(!open)}>
+			<StyledBurger isOpen={isOpen} onClick={handleClick}>
 				<div />
 				<div />
 				<div />
 			</StyledBurger>
-         <RightSideMenu open={open} />
+         <RightSideMenu  />
 		</>
 	);
 }
