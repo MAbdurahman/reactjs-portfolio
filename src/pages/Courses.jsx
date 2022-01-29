@@ -1,10 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
+// import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 
 export default function Courses() {
 	return (
 		<>
-			<Header />
+			{/* <Navigation /> */}
 			<div>
 				<h2>courses page</h2>
 			</div>

@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 
 
 export default function Home() {
    return (
 		<>
-		<Header />
+{/* 		<Navigation /> */}
 			<div id='home'
 				className='introduction'
 				style={{ backgroundImage: `url(./assets/intro-background.svg)` }}

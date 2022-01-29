@@ -55,25 +55,25 @@ const Ul = styled.ul`
 		animation-iteration-count: 1;
 	}
 	&.active li:nth-child(2) {
-		-webkit-animation-delay: 0.5s;
+		-webkit-animation-delay: 1s;
 		animation-delay: 1s;
 		--webkit-animation-iteration-count: 1;
 		animation-iteration-count: 1;
 	}
 	&.active li:nth-child(3) {
-		-webkit-animation-delay: 0.5s;
+		-webkit-animation-delay: 1.5s;
 		animation-delay: 1.5s;
 		--webkit-animation-iteration-count: 1;
 		animation-iteration-count: 1;
 	}
 	&.active li:nth-child(4) {
-		-webkit-animation-delay: 0.5s;
+		-webkit-animation-delay: 2s;
 		animation-delay: 2s;
 		--webkit-animation-iteration-count: 1;
 		animation-iteration-count: 1;
 	}
 	&.active li:nth-child(5) {
-		-webkit-animation-delay: 0.5s;
+		-webkit-animation-delay: 2.5s;
 		animation-delay: 2.5s;
 		--webkit-animation-iteration-count: 1;
 		animation-iteration-count: 1;

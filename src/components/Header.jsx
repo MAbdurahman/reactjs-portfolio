@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { RiMenu3Fill, RiCloseFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
-import MenuBurger from './MenuBurger';
+// import MenuBurger from './MenuBurger';
+import Navigation from './Navigation';
 
 export default function Header() {
 	//**************** variables ****************//
-	const [showHeader, setShowHeader] = useState(false);
-	const path = window.location.pathname;
+	/* const [showHeader, setShowHeader] = useState(false);
+	const path = window.location.pathname; */
 
 	return (
 		<div className='header'>
@@ -25,7 +26,7 @@ export default function Header() {
 					}}
 				/>
 			)} */}
-			<MenuBurger />
+			{/* <Navigation /> */}
 
 			{/* <ul className={`${showHeader ? 'show-header' : 'hide-header'}`}>
 				<li className={`${path == '/' && 'active'}`}>

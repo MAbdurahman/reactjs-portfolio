@@ -11,7 +11,7 @@ import Projects from './../pages/Projects';
 import About from './../pages/About';
 import Error from './../pages/Error';
 import Skills from '../pages/Skills';
-import MenuBurger from '../components/MenuBurger';
+import Navigation from '../components/Navigation';
 
 
 export default function App() {
@@ -30,7 +30,7 @@ export default function App() {
 				<Route path='*' component={Error} />
 			</Switch>
 			</BrowserRouter> */} 
-			<MenuBurger />
+			<Navigation />
 			<Home />
 			<About />
 			<Skills />

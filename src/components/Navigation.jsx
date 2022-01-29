@@ -45,7 +45,7 @@ const StyledBurger = styled.div`
 	}
 `;
 
-export default function MenuBurger() {
+export default function Navigation() {
 	//**************** variables ****************//
 	const { isOpen, handleClick } = useGlobalContext();
 

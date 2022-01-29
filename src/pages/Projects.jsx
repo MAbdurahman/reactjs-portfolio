@@ -1,10 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
+// import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 
 export default function Projects() {
 	return (
 		<>
-			<Header />
+			{/* <Navigation /> */}
 			<div>
 				<h2>projects page</h2>
 			</div>
