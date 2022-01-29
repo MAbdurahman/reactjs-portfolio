@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import RightSideMenu from './RightSideMenu';
 import { useGlobalContext } from '../utils/context';
 
-const StyledBurger = styled.div`
+const MenuBurger = styled.div`
 	position: fixed;
 	top: 3%;
 	right: 3%;
@@ -12,6 +12,7 @@ const StyledBurger = styled.div`
 	z-index: 20;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	flex-flow: column nowrap;
    background-color: transparent;
    transition: transform 0.333s cubic-bezier(0.26, 0.1, 0.27, 1.55);
@@ -51,11 +52,11 @@ export default function Navigation() {
 
 	return (
 		<>
-			<StyledBurger isOpen={isOpen} onClick={handleClick}>
+			<MenuBurger isOpen={isOpen} onClick={handleClick}>
 				<div />
 				<div />
 				<div />
-			</StyledBurger>
+			</MenuBurger>
          <RightSideMenu />
 		</>
 	);

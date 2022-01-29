@@ -1,13 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
-import Navigation from '../components/Navigation';
-
+import { Link } from 'react-scroll';
 
 export default function Home() {
    return (
 		<>
-{/* 		<Navigation /> */}
-			<div id='home'
+			<div
+				id='home'
 				className='introduction'
 				style={{ backgroundImage: `url(./assets/intro-background.svg)` }}
 			>
@@ -22,7 +20,16 @@ export default function Home() {
 						</div>
 						<div id='header-heading--btn'>
 							<button className='btn-default btn-home'>
-								<a href='#'>View More</a>
+								<Link
+									activeClass='active'
+									to='about'
+									spy={true}
+									smooth={true}
+									offset={0}
+									duration={500}
+								>
+									View More
+								</Link>
 							</button>
 						</div>
 					</div>

@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { useGlobalContext } from '../utils/context';
 import { Link } from 'react-scroll';
@@ -22,7 +21,7 @@ const moveFromRight = keyframes`
 `;
 
 
-const Ul = styled.ul`
+const MenuList = styled.ul`
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -81,18 +80,27 @@ const Ul = styled.ul`
 
 	li {
 		position: relative;
+		margin-top: 1.5625em;
 		padding: 1em 0.625em;
+		list-style: none;
 		opacity: 0;
 		cursor: pointer;
 	}
 
 	a {
 		position: relative;
-		font-size: 1.5rem;
+		padding-bottom: .5em;
+		font-size: 1.667rem;
+		font-weight: bolder;
 		letter-spacing: 2px;
+		text-transform: uppercase;
 		color: #edeef4 !important;
 		background-color: transparent;
 		border-radius: 3px;
+		--webkit-transition: color 0.5s,
+									border 0.5s;
+		transition: color 0.5s,
+						border 0.5s;
 		--webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 		transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	}
@@ -119,7 +127,7 @@ export default function RightSideMenu() {
 	const { isOpen, closeMenu } = useGlobalContext(); 
 
 	return (
-		<Ul isOpen={isOpen} className={`${isOpen ? 'active' : ''}`}>
+		<MenuList isOpen={isOpen} className={`${isOpen ? 'active' : ''}`}>
 			<li>
 				<Link
 					activeClass='active'
@@ -186,6 +194,6 @@ export default function RightSideMenu() {
 					Contact Me
 				</Link>
 			</li>
-		</Ul>
+		</MenuList>
 	);
 }
