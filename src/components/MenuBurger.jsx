@@ -56,7 +56,7 @@ export default function MenuBurger() {
 				<div />
 				<div />
 			</StyledBurger>
-         <RightSideMenu  />
+         <RightSideMenu />
 		</>
 	);
 }

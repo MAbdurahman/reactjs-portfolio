@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
+import { useGlobalContext } from '../utils/context';
 
 const moveFromRight = keyframes`
 	0% {
@@ -34,7 +35,7 @@ const Ul = styled.ul`
 	padding-top: 3.5em;
 	background-color: #134074;
 	transition: transform 0.5s ease-in-out;
-	transform: ${({ open }) => (open ? 'translate(0)' : 'translate(100%)')};
+	transform: ${({ isOpen }) => (isOpen ? 'translate(0)' : 'translate(100%)')};
 
 	&.active li {
 		--webkit-animation-name: ${moveFromRight};
@@ -112,10 +113,11 @@ const Ul = styled.ul`
 	}
 `;
 
-export default function RightSideMenu({ open }) {
+export default function RightSideMenu() {
+	const { isOpen, handleClick, closeMenu } = useGlobalContext(); 
 
 	return (
-		<Ul open={open} className={`${open ? 'active' : ''}`}>
+		<Ul isOpen={isOpen} className={`${isOpen ? 'active' : ''}`}>
 			<li>
 				<Link to='/'>Home</Link>
 			</li>
