@@ -89,7 +89,7 @@ const Ul = styled.ul`
 		position: relative;
 		font-size: 1.5rem;
 		letter-spacing: 2px;
-		color: #edeef4;
+		color: #edeef4 !important;
 		background-color: transparent;
 		border-radius: 3px;
 		--webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
