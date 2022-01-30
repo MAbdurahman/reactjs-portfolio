@@ -1,0 +1,16 @@
+section#about {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.about_info--title {
+   padding-top: 5em;
+   text-align: center;
+}
+
+.about_info--button-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
