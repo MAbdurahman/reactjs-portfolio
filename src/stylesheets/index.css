@@ -272,6 +272,7 @@ p {
 /**************** btn-blue button ****************/
 
 .btn-blue {
+	color: var(--clr-white);
 	background-color: transparent;
 	background-color: var(--clr-darker-base);
 	border: 2px solid var(--clr-darker-base);
@@ -280,7 +281,7 @@ p {
 
 .btn-blue:focus,
 .btn-blue:hover {
-	color: var(--clr-darker-base);
+	/* color: var(--clr-darker-base); */
 	/* color: var(--clr-lighter-blue); */
 	border-color: var(--clr-darker-base);
 	border-color: var(--clr-lighter-base);

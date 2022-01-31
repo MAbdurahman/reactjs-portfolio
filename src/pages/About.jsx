@@ -42,7 +42,7 @@ export default function About() {
 											</strong>
 										</p>
 										<div className='about_info--button-container'>
-											<button className='btn-default btn-home'>
+											<button className='btn-default btn-blue'>
 												<Link
 													activeClass='active'
 													to='skills'
@@ -54,7 +54,7 @@ export default function About() {
 													Read More
 												</Link>
 											</button>
-											<button className='btn-default btn-home'>
+											<button className='btn-default btn-blue'>
 												<a href='tel:9017538834'>Call Me</a>
 											</button>
 										</div>

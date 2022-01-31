@@ -19,7 +19,7 @@ export default function Skills() {
 								alias quaerat? Quasi hic quidem illum. Ad delectus natus
 								aut hic explicabo minus quod.
 							</p>
-							<button className='btn-default btn-home'>
+							<button className='btn-default btn-blue'>
 								<Link
 									activeClass='active'
 									to='portfolio'
