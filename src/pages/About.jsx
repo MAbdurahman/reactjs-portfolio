@@ -24,19 +24,21 @@ export default function About() {
 											<strong>Andre Romanovich</strong>, a Developer
 											and Instructor in Computer Science, living in
 											the northeast region of the United States. I
-											bring to the table eight years of experience in
-											software and web development, and three years
-											experience as a instructor in Computer Science,
-											where I regularly assisted and aided students,
-											managed and represented my company brand
-											through exemplary service.
+											have a Masters in Computer Science, coupled
+											with special interests in Mathematics and Fine
+											Art. I specialize in creating beautiful
+											responsive websites, using the best practices
+											and latest guideline standards. As a result, my
+											websites are semantic and SEO friendly, which
+											improves the quality and quantity of your
+											website traffic.
 										</p>
 										<p className='about-text'>
-											Moreover, I have volunteered with my local
-											community center for over seven years mentoring
-											children and helping them with their homework,
-											raising money for community events and
-											assisting with maintenance projects. I am  
+											When I am not writing code, I volunteer with my
+											local community center. Where I mentor
+											children, helping students them with their homework,
+											raising money for community events, and
+											assisting with the maintenance projects. I am{' '}
 											<strong>
 												<em> a dedicated Problem Solver!</em>
 											</strong>
