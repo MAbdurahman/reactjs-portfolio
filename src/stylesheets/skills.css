@@ -3,6 +3,7 @@ section {
 }
 section#skills {
 	position: relative;
+	background-color: rgba(218, 214, 214, 0.5);
 }
 #skills-container {
 	position: absolute;
