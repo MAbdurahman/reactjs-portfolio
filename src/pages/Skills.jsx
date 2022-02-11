@@ -5,17 +5,19 @@ export default function Skills() {
    return (
 		<>
 			<section class='skills' id='skills'>
-				<div class='max-width'>
-					<h2 class='skills-title'>Tech Skills</h2>
+				<div class='container' id='skills-container'>
+					<div className='skills-title'>
+						<h2>Tech Skills</h2>
+					</div>
 					<div class='skills-content'>
 						<div class='column left'>
-							<div class='text'>Tech Skills & experiences.</div>
+							<div class='text'>Soft Skills & experiences.</div>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Lorem interpersonal skill sit amet consectetur adipisicing elit.
 								Dignissimos, ratione error est recusandae consequatur,
-								iusto illum deleniti quidem impedit, quos quaerat quis
-								minima sequi. Cupiditate recusandae laudantium esse,
-								harum animi aspernatur quisquam et delectus ipsum quam
+								iusto illum deleniti communication, quos quaerat quis
+								minima sequi. Collaboration recusandae laudantium esse,
+								harum animi leadership quisquam et delectus ipsum quam
 								alias quaerat? Quasi hic quidem illum. Ad delectus natus
 								aut hic explicabo minus quod.
 							</p>
