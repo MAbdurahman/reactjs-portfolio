@@ -8,7 +8,20 @@ section#about {
    padding-top: 5em;
    text-align: center;
 }
-
+.about_image {
+   position: relative;
+}
+.about_image::before {
+   content: '';
+   position: absolute;
+   top: -1.5rem;
+   left: -1.5rem;
+   width: 100%;
+   height: 100%;
+   z-index: -2;
+   border: 0.5rem solid #0b2545;
+   border-radius: 5px;
+}
 .about_info--button-container {
    display: flex;
    flex-direction: row;

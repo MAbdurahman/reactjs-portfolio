@@ -9,7 +9,7 @@ export default function About() {
 					<div className='row'>
 						<div className='col-xl-5 col-xs-12'>
 							<div className='about_image'>
-								<img src='./assets/about/author.jpg' alt='author' />
+								<img className='about_photo' src='./assets/about/author.jpg' alt='author' />
 							</div>
 						</div>
 						<div className='col-xl-7 col-xs-12'>
