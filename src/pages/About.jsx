@@ -36,11 +36,11 @@ export default function About() {
 										<p className='about-text'>
 											When I am not writing code, I volunteer with my
 											local community center. Where I mentor
-											children, helping students them with their homework,
+											children, helping students with their homework,
 											raising money for community events, and
-											assisting with the maintenance projects. I am{' '}
+											assisting with various maintenance projects. I am{' '}
 											<strong>
-												<em> a dedicated Problem Solver!</em>
+												<em> a Dedicated Problem Solver!</em>
 											</strong>
 										</p>
 										<div className='about_info--button-container'>
@@ -53,7 +53,7 @@ export default function About() {
 													offset={0}
 													duration={500}
 												>
-													Read More
+													View More
 												</Link>
 											</button>
 											<button className='btn-default btn-blue'>

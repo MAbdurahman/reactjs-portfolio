@@ -28,7 +28,7 @@ export default function Home() {
 									offset={0}
 									duration={500}
 								>
-									View More
+									Read More
 								</Link>
 							</button>
 						</div>

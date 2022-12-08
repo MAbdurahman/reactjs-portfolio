@@ -4,14 +4,14 @@ import { Link } from 'react-scroll';
 export default function Skills() {
    return (
 		<>
-			<section class='skills' id='skills'>
-				<div class='container' id='skills-container'>
+			<section className='skills' id='skills'>
+				<div className='container' id='skills-container'>
 					<div className='skills-title'>
 						<h2>Tech Skills</h2>
 					</div>
-					<div class='skills-content'>
-						<div class='column left'>
-							<div class='text'>Soft Skills & experiences.</div>
+					<div className='skills-content'>
+						<div className='column left'>
+							<div className='text'>Soft Skills & experiences.</div>
 							<p>
 								Lorem interpersonal skill sit amet consectetur adipisicing elit.
 								Dignissimos, ratione error est recusandae consequatur,
@@ -34,41 +34,41 @@ export default function Skills() {
 								</Link>
 							</button>
 						</div>
-						<div class='column right'>
-							<div class='bars'>
-								<div class='info'>
+						<div className='column right'>
+							<div className='bars'>
+								<div className='info'>
 									<span>HTML</span>
 									<span>90%</span>
 								</div>
-								<div class='line html'></div>
+								<div className='line html'></div>
 							</div>
-							<div class='bars'>
-								<div class='info'>
+							<div className='bars'>
+								<div className='info'>
 									<span>CSS</span>
 									<span>75%</span>
 								</div>
-								<div class='line css'></div>
+								<div className='line css'></div>
 							</div>
-							<div class='bars'>
-								<div class='info'>
+							<div className='bars'>
+								<div className='info'>
 									<span>JavaScript</span>
 									<span>80%</span>
 								</div>
-								<div class='line js'></div>
+								<div className='line js'></div>
 							</div>
-							<div class='bars'>
-								<div class='info'>
+							<div className='bars'>
+								<div className='info'>
 									<span>PHP</span>
 									<span>65%</span>
 								</div>
-								<div class='line php'></div>
+								<div className='line php'></div>
 							</div>
-							<div class='bars'>
-								<div class='info'>
+							<div className='bars'>
+								<div className='info'>
 									<span>MySQL</span>
 									<span>70%</span>
 								</div>
-								<div class='line mysql'></div>
+								<div className='line mysql'></div>
 							</div>
 						</div>
 					</div>
