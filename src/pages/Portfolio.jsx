@@ -5,7 +5,6 @@ export default function Portfolio() {
       <>
       <section id="portfolio">
          <h2>PortfolioPage</h2>
-
       </section>
       </>
    )
