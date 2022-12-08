@@ -11,7 +11,7 @@ export default function Skills() {
 					</div>
 					<div className='skills-content'>
 						<div className='column left'>
-							<div className='text'>Soft Skills & experiences.</div>
+							<div className='text'>Soft Skills & Experiences.</div>
 							<p>
 								Lorem interpersonal skill sit amet consectetur adipisicing elit.
 								Dignissimos, ratione error est recusandae consequatur,

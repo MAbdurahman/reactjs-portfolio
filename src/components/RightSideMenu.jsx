@@ -10,8 +10,8 @@ const moveFromRight = keyframes`
 		transform: translateX(10rem);
 	}
 	80% {
-		-webkit-transform: translateX(-5rem);
-		transform: translateX(-5rem);
+		-webkit-transform: translateX(-8rem);
+		transform: translateX(-8rem);
 	}
 	100% {
 		opacity: 1;
@@ -178,7 +178,7 @@ export default function RightSideMenu() {
 					duration={500}
 					onClick={closeMenu}
 				>
-					Portfolio
+					My Portfolio
 				</Link>
 			</li>
 			<li>
